@@ -32,24 +32,28 @@ body * {
     color: #404;
 }
 
+.page-container {
+    margin-top: -200px;
+}
 
 .background-image-wrapper {
     font-family: sans-serif;
     font-size: 1.5rem;
-    margin-bottom: 430px;
+    height: 700px;
+    background-position: 75% 65%;
 }
 
 
 @media (max-width: 900px) {
     .background-image-wrapper {
-        margin-bottom: 330px !important;
+       height: 550px;
     }
 }
 
 
 @media (max-width: 500px) {
     .background-image-wrapper {
-        margin-bottom: 230px !important;
+        height: 400px;
     }
 }
 h2 {
