@@ -1,11 +1,31 @@
 <!DOCTYPE HTML>
+
+<!--
+    Oh, so you are looking at the source code?
+
+    This site is written in my own declarative web component framework
+    Modulo JS. I kept it simple so it's actually running in "dev" mode. This
+    means you can even "build" it in your browser, if you want to! Really, try
+    bringing up Dev Tools (Ctrl Shift J on some browsers) and look for the
+    Modulo COMMANDS menu, then click "build" (possibly twice, if on Firefox).
+    Boom, it just installed dependencies and built!
+
+    Anyway, feel free to look at the rest of the source code to see how the
+    "magic" happens ("look ma, no node_modules!")
+-->
+
+
 <script Modulo
     src="/static/js/Modulo.js"
-    -src="/static/" 
+    -src="/static/"
 ></script>
 
-<x-Page pagetitle="Berkeley Tutoring" navselected="/index.html" >
-    <h1 slot="above" style="text-align: center; font-family: monospace; font-size: 3rem">Computer Science & Algorithms</h1>
+<x-Page pagetitle="Berkeley Tutoring" navselected="/index.html">
+    <h1 style="text-align: center; font-family: monospace; font-size: 3rem" slot="above">
+        Berkeley Private Lessons
+        <br /><small style="color: #555">Algorithms, Interviews, and General CS Training</small>
+    </h1>
+
     <div 
         slot="above"
         class="calendly-inline-widget"
@@ -44,20 +64,61 @@
     for anyone interested!</p>
 
     <div style="background: #eee; margin: 10px; padding: 10px; font-family: sans-serif !important; width: 80%; margin-left: 10%">
-    <img src="https://kickstartcoding.com/static/images/kickstartcodinglogo.svg" />
-    <p>Languages and Frameworks: Python, Django, Postgres SQL, Bash,
-    JavaScript, React and more</p>
-    <p>Extensive curriculum: 65+ hours of studio recorded “virtual workshop”
-    videos, 200+ activities & mini-projects, 50+ cheat-sheets & study guides,
-    20+ incremental, creative homework project guides (additionally, access to
-    live recordings of my lectures in Oakland, in case you want that “live
-    classroom hum”)</p>
-    <p>A guidebook: Kickstart Career, a 94 page guide-book on every stage of
-    the Silicon Valley / SF tech job hunt</p>
-    <a href="https://kickstartcoding.com">Learn more about my curriculum here &raquo;</a>
+        <img src="https://kickstartcoding.com/static/images/kickstartcodinglogo.svg" />
+        <p>Languages and Frameworks: Python, Django, Postgres SQL, Bash,
+        JavaScript, React and more</p>
+        <p>Extensive curriculum: 65+ hours of studio recorded “virtual workshop”
+        videos, 200+ activities & mini-projects, 50+ cheat-sheets & study guides,
+        20+ incremental, creative homework project guides (additionally, access to
+        live recordings of my lectures in Oakland, in case you want that “live
+        classroom hum”)</p>
+        <p>A guidebook: Kickstart Career, a 94 page guide-book on every stage of
+        the Silicon Valley / SF tech job hunt</p>
+        <a href="https://kickstartcoding.com">Learn more about my curriculum here &raquo;</a>
     </div>
 
-    <h1><a href="https://calend.ly/kickstartcoding/berkeleytutoring" class="Btn">Book your free 30 minute consultation now &raquo;</a></h1>
 
+    <hr />
+    <h1>TUTORING PLANS</h1>
+    <p><strong>Private Zoom-Based Half-Hour Lessons</strong> - We can get
+    through <em>A LOT</em> of stuff in a half-hour timeslot! During these
+    half-hour sessions, we can typically walk through how to solve 2-5 problems
+    (depending on their difficulty). I can also assign or recommend you extra
+    assignments to strengthen your coding and algo skills, as needed.</p>
+    <p><strong>Fast and helpful email responses</strong> -  Outside of your
+    private session time, you can also get "asynchronous" help by asking me
+    questions via email. This enables you to have learning road-blocks solved
+    any weekday, even if there is no private lesson.</p>
+    <p><strong>Customized plans</strong> - The plans below are priced based on
+    how many private lessons you are purchasing. Choose a plan below, or
+    schedule a call so we create plan for your custom educational goals or
+    time-frames!</p>
+
+    <hr />
+    <h3 style="color: #404">Month-to-Month</h3>
+    <p>$99 per session  | 4 sessions per month | $396 every month</p>
+    <p>Our basic plan is priced month-to-month, for ultimate flexibility.
+    Sign-up, choose a timeslot, and get learning!</p>
+
+    <hr />
+    <h3 style="color: #404">6 Month Plan</h3>
+    <p>$83 per session  | 4 sessions per month | $1992 for 6 months</p>
+    <p>Like the month-to-month plan, except a structure where you save by
+    paying ahead. We’ve found many students working through our video-based
+    coding academy use 6 months to both complete their customized program and
+    get valuable training to jump-start their job-search.</p>
+
+    <hr />
+    <h3 style="color: #404">3 Month Intensive Plan</h3>
+    <p>$68 per session | 12 sessions per month, $2448 for 3 months</p>
+    <p>Our Intensive Bootcamp tutoring plan provides 3 sessions a week for
+    accelerated learning. We’ve found students are capable of completing the
+    program in 3 months with this intensive structure; however, we are also
+    flexible - if you are taking longer, you can renew and continue, or even
+    switch to another plan while you get coaching during the job hunt!</p>
+
+
+    <hr />
+    <h1><a href="https://calend.ly/kickstartcoding/berkeleytutoring" class="Btn">Book your free 30 minute consultation now &raquo;</a></h1>
 </x-Page>
 
