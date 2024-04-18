@@ -1,14 +1,16 @@
 <!DOCTYPE HTML>
 
 <!--
-    Oh, so you are looking at the source code?
 
-    This site is written in my own declarative web component framework
-    Modulo JS. I kept it simple so it's actually running in "dev" mode. This
-    means you can even "build" it in your browser, if you want to! Really, try
-    bringing up Dev Tools (Ctrl Shift J on some browsers) and look for the
-    Modulo COMMANDS menu, then click "build" (possibly twice, if on Firefox).
-    Boom, it just installed dependencies and built!
+    Hey!
+
+    I bet you're the type that likes exploring source code. Well, your in luck!
+    This site is written in my own declarative web component framework Modulo
+    JS. I kept it simple so it's actually running in "dev" mode. This means you
+    can even "build" it in your browser, if you want to! Really, try bringing
+    up Dev Tools (Ctrl Shift J on some browsers) and look for the Modulo
+    COMMANDS menu, then click "build" (possibly twice, if on Firefox).  The
+    entire thing is pretty simple, only a few thousands lines of code total.
 
     Anyway, feel free to look at the rest of the source code to see how the
     "magic" happens ("look ma, no node_modules!")
@@ -23,8 +25,11 @@
 <x-Page pagetitle="Berkeley Tutoring" navselected="/index.html">
     <h1 style="text-align: center; font-family: monospace; font-size: 3rem" slot="above">
         Berkeley Private Lessons
-        <br /><small style="color: #555">Algorithms, Interviews, and General CS Training</small>
+        <br /><small style="color: #555">Algorithms, Interviews, and Expert Tutoring</small>
     </h1>
+    <div style="text-align: center; font-family: sans-serif; font-size: 1.5rem" slot="above">
+        Your first call is <em style="background-color: #eea">free</em>. Schedule now:
+    </div>
 
     <div 
         slot="above"
@@ -32,9 +37,19 @@
         data-url="https://calendly.com/kickstartcoding/berkeleytutoring" style="min-width:320px;height:700px;"
     ></div>
 
-    <h2>TUTORING 1:1 PRIVATE LESSONS</h2>
-    <h3>Now accepting new students</h3>
+    <div style="margin-bottom: 430px;" slot="above">
+        <p  style="text-align: center;">Want to learn more? Keep reading:</p>
+        <img 
+            src="https://kickstartcoding.com/static/images/classphotos23/IMG_2633.JPG"
+        />
+    </div>
 
+    <h1>👋 Hi, I'm Michael, a Berkeley-based coding
+    instructor, and I'm here to help!</h1>
+
+    <img style="float:right; border-radius: 50px; border: 3px solid black; height: 150px" src="/static/images/michaelb.jpg" />
+
+    <h2>PRIVATE LESSONS</h2>
     <p>Are you looking for an extra boost in CS? Does Big O feel more like a Big
     Ol’ pile of confusion? Is Linux is going in one ear, and out to /dev/null? Or,
     having conquered the basics, are you looking for the next real challenge in
@@ -45,14 +60,54 @@
     industry veterans needing an emergency “brushing up” on algos before the big
     interview.</p>
 
-    <hr />
+    <h2>TUTORING PLANS</h2>
+    <p><strong>Private Zoom-Based Half-Hour Lessons</strong> - We can get
+    through <em>A LOT</em> of stuff in a half-hour timeslot! During these
+    half-hour sessions, we can typically walk through how to solve 2-5 problems
+    (depending on their difficulty). I can also assign or recommend you extra
+    assignments to strengthen your coding and algo skills, as needed.</p>
+    <p><strong>Fast and helpful email responses</strong> -  Outside of your
+    private session time, you can also get "asynchronous" help by asking me
+    questions via email. This enables you to have learning road-blocks solved
+    any weekday, even if there is no private lesson.</p>
+    <p><strong>Customized plans</strong> - The plans below are priced based on
+    how many private lessons you are purchasing. Choose a plan below, or
+    schedule a call so we create plan for your custom educational goals or
+    time-frames!</p>
+
+    <div class="bt-well">
+        <h3 style="color: #404">Month-to-Month</h3>
+        <p>$99 per session  | 4 sessions per month | $396 every month</p>
+        <p>My basic plan is priced month-to-month with no further commitment, for
+        ultimate flexibility.  Sign-up, choose a timeslot, and get learning!</p>
+
+        <hr />
+        <h3 style="color: #404">6 Month Plan</h3>
+        <p>$83 per session  | 4 sessions per month | $1992 for 6 months</p>
+        <p>I’ve found many students working through my video-based coding academy
+        use 6 months to both complete their customized program and get valuable
+        training to jump-start their job-search. Similar to the month-to-month
+        plan, but with a large discount for paying ahead. </p>
+
+        <hr />
+        <h3 style="color: #404">3 Month Intensive Plan</h3>
+        <p>$68 per session | 12 sessions per month, $2448 for 3 months</p>
+        <p>The Intensive Bootcamp tutoring plan provides 3 sessions a week for
+        accelerated learning. I’ve found students are capable of completing the
+        program in 3 months with this intensive structure; however, as with all
+        plans, this too can be customized.</p>
+    </div>
+
+
+    <h2>DETAILS</h2>
+
     <h3>COACHING | Hack the “Whiteboard Problem”</h3>
 
     <p>I can provide 1:1 coaching on solving the notoriously difficult
     algorithm problems covered in the so-called “FAANG/MAMAA” “whiteboard”
-    coding challenges.  Having “been there, done that”, I now help students
-    prepare for Frontend, Backend, DevOps, TPM, and others.</p>
-    <hr />
+    coding challenges. Having “been there, done that”, I now help students
+    prepare for Frontend, Backend, DevOps, Technical Product Manager, and other
+    sought-after roles at tech companies.</p>
 
 
     <h3>VIDEO PROGRAM INCLUDED | Learn “Full Stack”</h3>
@@ -63,7 +118,7 @@
     video program, free to all my tutoring students: A full stack “bootcamp”
     for anyone interested!</p>
 
-    <div style="background: #eee; margin: 10px; padding: 10px; font-family: sans-serif !important; width: 80%; margin-left: 10%">
+    <div class="bt-well">
         <img src="https://kickstartcoding.com/static/images/kickstartcodinglogo.svg" />
         <p>Languages and Frameworks: Python, Django, Postgres SQL, Bash,
         JavaScript, React and more</p>
@@ -79,46 +134,8 @@
     </div>
 
 
-    <hr />
-    <h1>TUTORING PLANS</h1>
-    <p><strong>Private Zoom-Based Half-Hour Lessons</strong> - We can get
-    through <em>A LOT</em> of stuff in a half-hour timeslot! During these
-    half-hour sessions, we can typically walk through how to solve 2-5 problems
-    (depending on their difficulty). I can also assign or recommend you extra
-    assignments to strengthen your coding and algo skills, as needed.</p>
-    <p><strong>Fast and helpful email responses</strong> -  Outside of your
-    private session time, you can also get "asynchronous" help by asking me
-    questions via email. This enables you to have learning road-blocks solved
-    any weekday, even if there is no private lesson.</p>
-    <p><strong>Customized plans</strong> - The plans below are priced based on
-    how many private lessons you are purchasing. Choose a plan below, or
-    schedule a call so we create plan for your custom educational goals or
-    time-frames!</p>
-
-    <hr />
-    <h3 style="color: #404">Month-to-Month</h3>
-    <p>$99 per session  | 4 sessions per month | $396 every month</p>
-    <p>My basic plan is priced month-to-month, for ultimate flexibility.
-    Sign-up, choose a timeslot, and get learning!</p>
-
-    <hr />
-    <h3 style="color: #404">6 Month Plan</h3>
-    <p>$83 per session  | 4 sessions per month | $1992 for 6 months</p>
-    <p>Like the month-to-month plan, except a structure where you save by
-    paying ahead. I’ve found many students working through my video-based
-    coding academy use 6 months to both complete their customized program and
-    get valuable training to jump-start their job-search.</p>
-
-    <hr />
-    <h3 style="color: #404">3 Month Intensive Plan</h3>
-    <p>$68 per session | 12 sessions per month, $2448 for 3 months</p>
-    <p>Our Intensive Bootcamp tutoring plan provides 3 sessions a week for
-    accelerated learning. I’ve found students are capable of completing the
-    program in 3 months with this intensive structure; however, as with all
-    plans, this too can be customized.</p>
-
-
-    <hr />
-    <h1><a href="https://calend.ly/kickstartcoding/berkeleytutoring" class="Btn">Book your free 30 minute consultation now &raquo;</a></h1>
 </x-Page>
 
+
+<hr />
+<h1><a href="https://calend.ly/kickstartcoding/berkeleytutoring" class="Btn">Book your free consultation call now &raquo;</a></h1>
