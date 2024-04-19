@@ -3,6 +3,22 @@
     components here to have them be available with an "x-" prefix, or create
     new libraries and include them in file with <Library -src=...></Library>
 -->
+
+<!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
+<script Configuration>
+(function(f, a, t, h, o, m){
+	a[h]=a[h]||function(){
+		(a[h].q=a[h].q||[]).push(arguments)
+	};
+	o=f.createElement('script'),
+	m=f.getElementsByTagName('script')[0];
+	o.async=1; o.src=t; o.id='fathom-script';
+	m.parentNode.insertBefore(o,m)
+})(document, window, '//an.michaelb.org/tracker.js', 'fathom');
+fathom('set', 'siteId', 'LGBVN');
+fathom('trackPageview');
+</script>
+
 <Component name="Page" mode="vanish-into-document">
     <Props
         pagetitle
